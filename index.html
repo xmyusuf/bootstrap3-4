@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Movies catalog</title>
+</head>
+<body>
+  <div class="wrapper container" > 
+    <h1 class="wrapper__heading text-center mt-3" >Movies catalog</h1>
+
+    <div class="wrapper__mini-wrapper row" >
+      <div class="wrapper__first-wrapper col-4" >
+        <form action="https://echo.htmlacademy.ru" method="post" >
+          <input class="wrapper__input form-control" type="text">
+
+          <input class="wrapper__input form-control mt-3" type="text">
+
+          <select class="form-select mt-3" >
+            <option selected>All</option>
+            <option value="horror">Horror</option>
+            <option value="action">Action</option>
+            <option value="fantastic">Fantastic</option>
+            <option value="comedy">Comedy</option>
+          </select>
+
+          <input class="wrapper__input form-control mt-3" list="listOptions" placeholder="Type to search...">
+          <datalist id="listOptions">
+            <option value="Rating (high to low)">
+            <option value="Rating (low to high)">
+          </datalist>
+
+          <div class="d-grid gap-2 mt-3">
+            <button class="wrapper__button btn btn-primary" type="submit" value="submit">Search</button>
+          </div>
+        </form>
+
+        <h2 class="fs-1 mt-5" >Bookmarked movies</h2>
+
+        <ul class="list-group" >
+          <li class="list-group-item" >
+            <p class="fw-bold">Avengers: Infinity War</p>
+            <button class="btn btn-danger btn-lg" type="button">Remove</button>
+          </li>
+          <li class="list-group-item" >
+            <p class="fw-bold">The Avengers</p>
+            <button class="btn btn-danger btn-lg" type="button">Remove</button>
+          </li>
+          <li class="list-group-item" >
+            <p class="fw-bold">12 Years a Slave</p>
+            <button class="btn btn-danger btn-lg" type="button">Remove</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wrapper__second-wrapperm col-8" >
+        <span class="fs-5 fw-bold">Search result: 39</span>
+
+        <div class="alert alert-info" role="alert">
+          Use the form on the left to search for a movie
+        </div>
+
+        <div class="row ms-1">
+          <div class="card col-6" style="width: 26rem;">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/photo_2022-06-01_15-49-19.jpg" class="d-block w-100" alt="Avengers">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/photo_2022-06-01_15-49-27.jpg" class="d-block w-100" alt="Infinity">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/photo_2022-06-01_15-49-19.jpg" class="d-block w-100" alt="Avengers">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Avengers: Infinity War</h3>
+              <div>
+                <p>📅2018</p>
+                <p>⭐8.7</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary" type="button">Watch trailer</button>
+                <button class="btn btn-outline-info" type="button">More info</button>
+                <button class="btn btn-outline-success" type="button">Bookmark</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-6" style="width: 26rem;">
+            <div id="carouselExampleControlss" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/photo_2022-06-01_15-49-19.jpg" class="d-block w-100" alt="Avengers">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/photo_2022-06-01_15-49-27.jpg" class="d-block w-100" alt="Infinity">
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/photo_2022-06-01_15-49-19.jpg" class="d-block w-100" alt="Avengers">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlss" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">The Avengers</h3>
+              <div>
+                <p>📅2012</p>
+                <p>⭐8.1</p>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary" type="button">Watch trailer</button>
+                <button class="btn btn-outline-info" type="button">More info</button>
+                <button class="btn btn-outline-success" type="button">Bookmark</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="pagination d-flex justify-content-center mt-4">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./css/js/bootstrap.min.js"></script>
+</body>
+</html>
